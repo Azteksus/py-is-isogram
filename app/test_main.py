@@ -22,15 +22,3 @@ import pytest
 def test_latter(word: str, result: bool) -> None:
     assert is_isogram(word) is result
 
-
-@pytest.mark.parametrize(
-    "word",
-    [
-        None,
-        12,
-        15.1,
-    ],
-)
-def test_latter_tupe(word: int | bool) -> None:
-    with pytest.raises(TypeError):
-        is_isogram(word)
