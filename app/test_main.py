@@ -21,4 +21,3 @@ import pytest
 )
 def test_latter(word: str, result: bool) -> None:
     assert is_isogram(word) is result
-
